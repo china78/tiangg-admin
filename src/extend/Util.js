@@ -2,7 +2,7 @@ import Server from '../extend/Server'
 
 function pipe () {
   var args = [].slice.call(arguments, 0)
-  var val = args[ 0 ]
+  var val = args[0]
   for (let arg of args) {
     if (args.indexOf(arg) != 0 && typeof arg === 'function') val = arg(val)
   }
@@ -14,8 +14,8 @@ function baiduTongjiAjax (body) {
     url: 'statistics/baidu',
     method: 'post',
     data: body
-  }).then(({data}) => {
-    let {header, body} = data
+  }).then(({ data }) => {
+    let { header, body } = data
     if (header && header.desc === 'success') {
       return body && body.data && body.data[0] && body.data[0].result
     } else {
@@ -28,7 +28,7 @@ function numberSplit (num) {
   return String(num).split('').reverse().map((a, i) => `${i % 3 === 2 ? ', ' : ''}${a}`).reverse().join('').replace(/^,/, '')
 }
 
-function combineTongjiData ({fields = [], items = []}, verbose = false) {
+function combineTongjiData ({ fields = [], items = [] }, verbose = false) {
   if (verbose) {
     var [category, list] = items
     items = category.map((c, i) => [c[0], ...list[i]])

@@ -32,7 +32,7 @@ instance.interceptors.response.use(function (response) {
         })
         break
       default:
-        window.EMA.fire('alert.show', response.data.msg, function () {})
+        window.EMA.fire('alert.show', response.data.msg, function () { })
     }
     throw new Error(response)
   } else {
@@ -52,9 +52,9 @@ instance.interceptors.response.use(function (response) {
         window.EMA.fire('logout')
       })
     } else if (status == 422) {
-      window.EMA.fire('alert.show', '传递参数错误', function () {})
+      window.EMA.fire('alert.show', '传递参数错误', function () { })
     } else {
-      window.EMA.fire('alert.show', message, function () {})
+      window.EMA.fire('alert.show', message, function () { })
     }
   }
   return Promise.reject(error)

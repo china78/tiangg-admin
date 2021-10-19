@@ -7,22 +7,20 @@
     reserved.
   </footer>
 </template>
-<style lang="stylus" rel="stylesheet/stylus" scoped type="text/stylus">
-
-</style>
+<style lang="stylus" rel="stylesheet/stylus" scoped type="text/stylus"></style>
 <script type="text/ecmascript-6">
-  import {mapState} from 'vuex'
-  import BaseComponent from 'src/extend/BaseComponent'
-  export default {
-    mixins: [ BaseComponent ],
-    name: 'Footer',
-    data: function () {
-      return {}
-    },
-    computed: mapState({
-      packageInfo: state => state.app.packageInfo
-    }),
-    methods: {}
-  }
+import { mapState } from 'vuex'
+import BaseComponent from 'src/extend/BaseComponent'
+export default {
+  mixins: [BaseComponent],
+  name: 'Footer',
+  data: function () {
+    return {}
+  },
+  computed: mapState({
+    packageInfo: state => state.app.packageInfo
+  }),
+  methods: {}
+}
 </script>
 

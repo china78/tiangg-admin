@@ -1,8 +1,8 @@
 const defaultConfig = require('./default')
 
-let config = Object.assign(defaultConfig, require('./' + (process.env.CODE_ENV || 'local')))
+let config = Object.assign(defaultConfig, require('./' + (process.env.CODE_ENV || 'local')));
 
-;['VIEW_PATH', 'ADMIN_PATH', 'EDITOR_PATH', 'API_PATH'].map(k => {
+['VIEW_PATH', 'ADMIN_PATH', 'EDITOR_PATH', 'API_PATH'].map(k => {
   if (config[k] === '/') return
   if (/^(https?:)?\/\//.test(config[k])) {
     config[k] = config[k].replace(/\/*$/, '/')

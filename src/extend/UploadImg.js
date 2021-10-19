@@ -45,7 +45,7 @@ var UploadImage = function ({
     prevent_duplicates: true,
     max_file_size: '100mb',
     init: {
-      PostInit () {},
+      PostInit () { },
       FilesAdded (up, files) {
         if (uploadControll) {
           return false
@@ -68,16 +68,16 @@ var UploadImage = function ({
           })
         }
       },
-      BeforeUpload (up, file) {},
-      UploadProgress (up, file) {},
+      BeforeUpload (up, file) { },
+      UploadProgress (up, file) { },
       FileUploaded (up, file, info) {
         if (info.status === 200) {
           me.imgSrc = me.imgSrc.replace('ymm.oss-cn-hangzhou.aliyuncs.com', 'imagecdn.ymm56.com')
           callback(me.imgSrc)
-        } else {}
+        } else { }
         uploadControll = false
       },
-      Error (up, err) {}
+      Error (up, err) { }
     }
   })
   this.uploader.init()

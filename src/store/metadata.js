@@ -59,8 +59,8 @@ const state = {
     }
   ],
   pageType: [
-    {value: '0', label: 'web'},
-    {value: 1, label: 'flutter'},
+    { value: '0', label: 'web' },
+    { value: 1, label: 'flutter' },
   ],
   mockAdvice: [
     { value: '@id', desc: '随机id' },

@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import {numberSplit} from './Util'
+import { numberSplit } from './Util'
 import Metadata from '../store/metadata'
 var defaultHeaderIcon = require('../assets/image/header/default.png')
 var defaultProjectIcon = require('../assets/image/project/cover-media.jpg')
@@ -34,7 +34,7 @@ Vue.filter('moneyFormat', function (value, num) {
   if (parseFloat(value) > 0) {
     var str = parseFloat(value).toFixed(num)
     var strArr = str.split('.')
-    return (/^0+$/.test(strArr[ 1 ])) ? strArr[ 0 ] : str
+    return (/^0+$/.test(strArr[1])) ? strArr[0] : str
   } else {
     return 0
   }
@@ -77,7 +77,7 @@ Vue.filter('toArray', function (value) {
  * 组角色过滤
  */
 Vue.filter('groupRole', function (value) {
-  var obj = Metadata.groupPower[ value - 1 ]
+  var obj = Metadata.groupPower[value - 1]
   if (obj) {
     return obj.label
   }
@@ -87,7 +87,7 @@ Vue.filter('groupRole', function (value) {
  * 项目角色过滤
  */
 Vue.filter('projectRole', function (value) {
-  var obj = Metadata.projectPower[ value - 1 ]
+  var obj = Metadata.projectPower[value - 1]
   if (obj) {
     return obj.label
   }

@@ -1,5 +1,5 @@
-function line ({title, seriesNames, x, y, log, unit, legend = true, legendAlign = 'right', tooltip = true, dataZoom = true, dataZoomLimit = 30},
- {seriesNames: seriesNames2, y: y2, log: log2, unit: unit2} = {}) {
+function line ({ title, seriesNames, x, y, log, unit, legend = true, legendAlign = 'right', tooltip = true, dataZoom = true, dataZoomLimit = 30 },
+  { seriesNames: seriesNames2, y: y2, log: log2, unit: unit2 } = {}) {
   var xLength = x.length
   var option = {
     title: {

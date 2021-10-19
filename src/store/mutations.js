@@ -2,7 +2,8 @@ export const initMenuData = (state, data) => {
   state.app.menuData = data
 }
 export const initUserInfo = (state, data) => {
-  state.userInfo = { ...state.userInfo,
+  state.userInfo = {
+    ...state.userInfo,
     ...data
   }
 }
