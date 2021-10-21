@@ -7,20 +7,15 @@
       >
         {{activeName == 'login' ? '注册 →' : '登录 →'}}
       </div>
-      <a
-        href="https://godspen.ymm56.com/"
-        target="_blank"
+      <img
+        src="./assets/image/logo.png"
+        alt="logo"
+        class="logo"
       >
-        <img
-          src="./assets/image/logo.png"
-          alt="logo"
-          class="logo"
-        >
-      </a>
       <div class="name">
         <a
           target="_blank"
-          href="https://github.com/ymm-tech/gods-pen"
+          href="https://github.com/china78/tiangg"
           class="github-btn"
         >
           <span class="gh-btn github">
@@ -189,26 +184,6 @@
             >注 册</el-button>
           </div>
         </el-form>
-      </div>
-    </div>
-    <div class="footer">
-      <div class="slogan">
-        <img
-          src="./assets/image/logo.png"
-          alt="logo"
-          class="slogan-logo"
-        >
-        <span>码良&nbsp;&nbsp;&nbsp;&nbsp;高扩展的在线网页制作平台</span>
-      </div>
-      <div class="links">
-        <a
-          href="https://godspen.ymm56.com/doc/cookbook/introduce.html#%E7%A0%81%E8%89%AF%E6%98%AF%E4%BB%80%E4%B9%88"
-          target="_blank"
-        >关于码良</a>
-        <a
-          href="https://godspen.ymm56.com/doc/cookbook/introduce.html"
-          target="_blank"
-        >使用帮助</a>
       </div>
     </div>
   </div>
@@ -413,7 +388,7 @@ export default {
     }
   },
   mounted () {
-    window.fetch('https://api.github.com/repos/ymm-tech/gods-pen').then(data => {
+    window.fetch('https://api.github.com/repos/china78/tiangg').then(data => {
       return data.json()
     }).then(res => {
       this.githubCount = res.stargazers_count

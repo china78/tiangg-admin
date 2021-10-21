@@ -80,16 +80,6 @@
             团队
           </span>
         </router-link>
-      <li class="">
-        <a
-          href="https://godspen.ymm56.com/doc/"
-          target="_blank"
-          title="Help"
-        >
-          <span>
-            帮助
-          </span>
-        </a>
       </li>
       <li class="">
         <router-link

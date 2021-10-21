@@ -504,7 +504,7 @@ export default {
       licenseKey: null,
       scrollHorizontally: true
     })
-    Promise.all([this.makeHeight(), this.getTodayDataByES(), this.getHistoryTrendByES(), this.getTodayEntriesByES(), this.getTodayTrendByES(), this.getPageCount()])
+    // Promise.all([this.makeHeight(), this.getTodayDataByES(), this.getHistoryTrendByES(), this.getTodayEntriesByES(), this.getTodayTrendByES(), this.getPageCount()])
   },
   methods: {
     goDetail: function (params) {

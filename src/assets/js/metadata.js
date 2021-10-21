@@ -28,19 +28,19 @@ export const footerPart = {
     title: '相关资源',
     list: [
       {
-        name: '码良脚手架',
+        name: 'tiangg脚手架',
         des: '',
-        link: 'https://github.com/ymm-tech/gods-pen-cli'
+        link: ''
       },
       {
-        name: '码良部署',
+        name: 'tiangg部署',
         des: '',
-        link: 'https://github.com/ymm-tech/gods-pen-docker'
+        link: ''
       },
       {
-        name: '码良文档',
+        name: 'tiangg文档',
         des: '',
-        link: 'https://github.com/ymm-tech/gods-pen-doc'
+        link: ''
       }
     ]
   },
@@ -53,7 +53,7 @@ export const footerPart = {
       // },
       {
         name: '错误反馈',
-        link: 'https://github.com/ymm-tech/gods-pen/issues'
+        link: ''
       },
     ]
   },
@@ -61,8 +61,8 @@ export const footerPart = {
     title: '关于我们',
     list: [
       {
-        name: '运满满',
-        link: 'http://www.ymm56.com/'
+        name: '',
+        link: ''
       }
     ]
   }
