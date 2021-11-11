@@ -11,7 +11,7 @@
 */
 
 module.exports = {
-  API_PATH: 'http://abc.com/api' // 配置为实际 nodejs api 服务外网可访问的路径
+  API_PATH: 'http://lowcode.zjrongxiang.com/api' // 配置为实际 nodejs api 服务外网可访问的路径
 }
 // nginx配置文件示例
 // server {

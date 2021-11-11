@@ -7,12 +7,12 @@
       >
         {{activeName == 'login' ? '注册 →' : '登录 →'}}
       </div>
-      <img
+      <!-- <img
         src="./assets/image/logo.png"
         alt="logo"
         class="logo"
-      >
-      <div class="name">
+      > -->
+      <!-- <div class="name">
         <a
           target="_blank"
           href="https://github.com/china78/tiangg"
@@ -24,7 +24,7 @@
           </span>
           <span class="gh-count github">{{githubCount}}</span>
         </a>
-      </div>
+      </div> -->
       <div class="form-box">
         <el-form
           ref="loginForm"
